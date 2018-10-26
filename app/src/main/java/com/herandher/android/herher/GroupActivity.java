@@ -54,11 +54,11 @@ public class GroupActivity extends AppCompatActivity {
     public ArrayList<Post> getPosts() {
         posts = new ArrayList<>();
         Post demoPost1 = new Post("Jane H.", getString(R.string.text1),
-                R.drawable.ic_launcher_background, R.drawable.ic_launcher_background);
+                R.drawable.profile_pic, R.drawable.post_image);
         Post demoPost2 = new Post("Jane H.", getString(R.string.text2),
-                R.drawable.ic_launcher_background);
+                R.drawable.profile_pic);
         Post demoPost3 = new Post("Jane H.", getString(R.string.text1),
-                R.drawable.ic_launcher_background, R.drawable.ic_launcher_background);
+                R.drawable.profile_pic, R.drawable.post_image);
         posts.add(demoPost1);
         posts.add(demoPost2);
         posts.add(demoPost3);

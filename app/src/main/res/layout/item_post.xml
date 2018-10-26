@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/horizontal_margin_short"
     android:layout_marginEnd="@dimen/vertical_margin"
     android:layout_marginStart="@dimen/vertical_margin"
     android:layout_marginTop="@dimen/horizontal_margin_short"
-    android:layout_marginBottom="@dimen/horizontal_margin_short"
     app:cardCornerRadius="40dp"
     app:cardElevation="2dp">
 
@@ -53,7 +53,9 @@
             android:id="@+id/group_post_image"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:maxHeight="200dp" />
+            android:adjustViewBounds="true"
+            android:maxHeight="200dp"
+            android:scaleType="centerCrop" />
 
         <LinearLayout
             android:layout_width="match_parent"

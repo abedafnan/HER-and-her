@@ -19,4 +19,10 @@
         android:text="stages"
         android:onClick="move2"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:onClick="move3"/>
+
 </LinearLayout>
