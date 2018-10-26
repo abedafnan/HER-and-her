@@ -13,8 +13,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    // Just for testing !
     public void move(View view) {
         Intent intent = new Intent(MainActivity.this, GroupActivity.class);
+        startActivity(intent);
+    }
+
+    public void move2(View view) {
+        Intent intent = new Intent(MainActivity.this, StagesActivity.class);
         startActivity(intent);
     }
 }
