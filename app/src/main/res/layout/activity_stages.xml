@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.herandher.android.herher.StagesActivity">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/stages_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            android:stateListAnimator="@null"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <TextView
+            android:id="@+id/stages_question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/vertical_margin"
+            android:layout_marginStart="@dimen/vertical_margin"
+            android:layout_marginTop="@dimen/horizontal_margin"
+            android:layout_marginBottom="@dimen/horizontal_margin_short"
+            android:layout_below="@+id/stages_toolbar"
+            android:text="@string/stage_question"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/Stages_choices"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/stages_question"
+            android:layout_marginBottom="@dimen/horizontal_margin_short"
+            android:layout_marginEnd="@dimen/vertical_margin"
+            android:layout_marginStart="@dimen/vertical_margin"
+            android:layout_marginTop="@dimen/horizontal_margin_short">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/vertical_margin"
+                android:text="IA" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/vertical_margin"
+                android:text="IB" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/vertical_margin"
+                android:text="IIA" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/vertical_margin"
+                android:text="IIB" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/vertical_margin"
+                android:text="IIIA" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/vertical_margin"
+                android:text="IIIB" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/vertical_margin"
+                android:text="IC" />
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/vertical_margin"
+                android:text="Not Sure!" />
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="@dimen/horizontal_margin"
+            android:text="next" />
+
+</RelativeLayout>
