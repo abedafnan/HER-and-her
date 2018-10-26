@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/horizontal_margin_short">
+
+    <me.himanshusoni.chatmessageview.ChatMessageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/chatMessageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:stateListAnimator="@null"
+        app:cmv_arrowGravity="start"
+        app:cmv_arrowMargin="3dp"
+        app:cmv_arrowPosition="right"
+        app:cmv_backgroundColor="@color/colorPrimary"
+        app:cmv_backgroundColorPressed="#FFBABABA"
+        app:cmv_contentPadding="10dp"
+        app:cmv_cornerRadius="16dp"
+        app:cmv_showArrow="true">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Placeholder"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#ffffff" />
+    </me.himanshusoni.chatmessageview.ChatMessageView>
+
+</LinearLayout>
