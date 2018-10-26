@@ -1,9 +1,5 @@
 package com.herandher.android.herher.models;
 
-/**
- * Created by Afnan A. A. Abed on 10/25/2018.
- */
-
 public class Post {
     String username;
     String postText;
@@ -15,6 +11,12 @@ public class Post {
         this.postText = postText;
         this.userImage = userImage;
         this.postImage = postImage;
+    }
+
+    public Post(String username, String postText, int userImage) {
+        this.username = username;
+        this.postText = postText;
+        this.userImage = userImage;
     }
 
     public String getUsername() {

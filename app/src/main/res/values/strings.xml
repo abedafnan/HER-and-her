@@ -2,4 +2,8 @@
     <string name="app_name">Her &amp; her</string>
 
     <string name="posts_recent">Recent Posts</string>
+
+    <string name="text1">is simply dummy text of the printing and typesetting industry.</string>
+    <string name="text2">Demonstration of how a post with only text will look,
+        is simply dummy text of the printing and typesetting industry.</string>
 </resources>

@@ -15,10 +15,6 @@ import java.util.ArrayList;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
-/**
- * Created by Afnan A. A. Abed on 10/25/2018.
- */
-
 public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> {
 
     private CustomItemClickListener mCallback;
@@ -61,6 +57,19 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
         holder.postText.setText(post.getPostText());
         holder.postImage.setImageResource(post.getPostImage());
 
+        holder.like.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // TODO: Action when the like button is clicked
+            }
+        });
+
+        holder.comment.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // TODO: Action when the comment button is clicked
+            }
+        });
     }
 
     @Override
@@ -74,14 +83,17 @@ public class PostsAdapter extends RecyclerView.Adapter<PostsAdapter.ViewHolder> 
         CircleImageView userImage;
         TextView postText;
         ImageView postImage;
+        ImageView like;
+        ImageView comment;
 
-        // Define what is inside every row
         public ViewHolder(View rootView) {
             super(rootView);
             username = rootView.findViewById(R.id.group_user_name);
             userImage = rootView.findViewById(R.id.group_user_image);
             postText = rootView.findViewById(R.id.group_post_text);
             postImage = rootView.findViewById(R.id.group_post_image);
+            like = rootView.findViewById(R.id.group_like_button);
+            comment = rootView.findViewById(R.id.group_comment_button);
         }
     }
 }
