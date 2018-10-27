@@ -5,11 +5,13 @@
     android:background="@mipmap/profile">
 
     <ImageView
-
         android:layout_width="350dp"
         android:layout_height="400dp"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/profile_pic"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginTop="8dp"
         android:src="@mipmap/white" />
 
     <de.hdodenhof.circleimageview.CircleImageView
