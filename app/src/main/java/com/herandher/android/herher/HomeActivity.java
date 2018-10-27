@@ -4,7 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AlertDialog;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -15,10 +18,19 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.herandher.android.herher.adapters.PostsAdapter;
+import com.herandher.android.herher.models.Post;
+
+import java.util.ArrayList;
+
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
+    private RecyclerView postsRecycler;
+    private PostsAdapter postsAdapter;
+    private ArrayList<Post> posts;
+    private SwipeRefreshLayout refreshLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,6 +56,17 @@ public class HomeActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        initialize();
+
+        refreshLayout = findViewById(R.id.refresh_layout2);
+        refreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+                getPosts();
+                refreshLayout.setRefreshing(false);
+            }
+        });
 
     }
 
@@ -99,17 +122,20 @@ public class HomeActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.logout) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.hope) {
+            Intent intent = new Intent(HomeActivity.this, ChatbotActivity.class);
+            startActivity(intent);
+        } else if (id == R.id.notifications) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.saved_posts) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.gifts_vouches) {
 
-        } else if (id == R.id.nav_send) {
+        } else if (id == R.id.settings) {
+
+        } else if (id == R.id.feedback) {
 
         }
 
@@ -117,4 +143,29 @@ public class HomeActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    public void initialize() {
+        postsRecycler = findViewById(R.id.group_posts_recycler2);
+        postsRecycler.setLayoutManager(new LinearLayoutManager(
+                this, LinearLayoutManager.VERTICAL, false));
+        posts = getPosts();
+        postsAdapter = new PostsAdapter(posts, null);
+        postsRecycler.setAdapter(postsAdapter);
+    }
+
+    public ArrayList<Post> getPosts() {
+        posts = new ArrayList<>();
+        Post demoPost1 = new Post("Jane H.", getString(R.string.text1),
+                R.drawable.profile_pic, R.drawable.post_image);
+        Post demoPost2 = new Post("Jane H.", getString(R.string.text2),
+                R.drawable.profile_pic);
+        Post demoPost3 = new Post("Jane H.", getString(R.string.text1),
+                R.drawable.profile_pic, R.drawable.post_image);
+        posts.add(demoPost1);
+        posts.add(demoPost2);
+        posts.add(demoPost3);
+
+        return posts;
+    }
+
 }

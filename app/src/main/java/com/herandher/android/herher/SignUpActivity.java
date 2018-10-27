@@ -1,9 +1,12 @@
 package com.herandher.android.herher;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
@@ -54,5 +57,10 @@ public class SignUpActivity extends AppCompatActivity {
         statusUser.add(" Survivor");
         statusUser.add(" Protection");
         statuesSpinner.setAdapter(statusUser);
+    }
+
+    public void signUp(View view){
+        Intent intent = new Intent(SignUpActivity.this, StagesActivity.class);
+        startActivity(intent);
     }
 }
