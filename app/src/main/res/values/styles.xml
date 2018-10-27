@@ -3,6 +3,8 @@
     <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
+        <item name="spinnerStyle">@style/Widget.App.Spinner</item>
+        <item name="android:spinnerStyle">@style/Widget.App.Spinner</item>
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
@@ -14,9 +16,20 @@
         <item name="android:layout_height">50dp</item>
         <item name="android:background">@drawable/edit_text_drawable</item>
         <item name="android:layout_marginBottom">@dimen/horizontal_margin_short</item>
-        <item name="android:layout_marginTop">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/horizontal_margin_short</item>
 
     </style>
+
+    <style name="dropDown_style">
+        <item name="android:drawableRight">@drawable/ic_keyboard_arrow_down_black_24dp</item>
+        <item name="android:paddingRight">@dimen/horizontal_margin_short</item>
+        <item name="android:layout_width">300dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:background">@drawable/edit_text_drawable</item>
+        <item name="android:layout_marginBottom">@dimen/horizontal_margin_short</item>
+        <item name="android:layout_marginTop">@dimen/horizontal_margin_short</item>
+    </style>
+
 
     <style name="Button_style">
         <item name="android:textColor">#ffffff</item>
@@ -25,12 +38,19 @@
         <item name="android:layout_height">50dp</item>
         <item name="android:background">@drawable/button_drawable</item>
         <item name="android:layout_marginBottom">@dimen/horizontal_margin_short</item>
-        <item name="android:layout_marginTop">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginTop">@dimen/horizontal_margin_short</item>
 
     </style>
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+
+    <style name="Widget.App.Spinner" parent="@style/Widget.AppCompat.Spinner">
+        <item name="overlapAnchor">true</item>
+        <item name="android:background">@drawable/ic_keyboard_arrow_down_black_24dp</item>
+    </style>
+
 
 </resources>

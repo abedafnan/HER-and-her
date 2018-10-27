@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/horizontal_margin"
+        android:contentDescription="@string/login"
+        android:scaleType="center"
+        android:src="@mipmap/logo" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/userName_editText_signUp"
+            style="@style/EditText_style"
+            android:drawablePadding="@dimen/horizontal_margin_short"
+            android:hint="@string/user_name"
+            android:inputType="text"
+            android:paddingLeft="@dimen/padding_editText" />
+
+        <ImageView
+            android:id="@+id/account_ImageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@id/userName_editText_signUp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/horizontal_margin_short"
+            android:contentDescription="@string/creat_account"
+            android:src="@mipmap/username_icon" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/email_editText"
+            style="@style/EditText_style"
+            android:drawablePadding="@dimen/horizontal_margin_short"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingLeft="@dimen/padding_editText" />
+
+
+        <ImageView
+            android:id="@+id/email_imageView"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignLeft="@id/email_editText"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/horizontal_margin_short"
+            android:contentDescription="@string/creat_account"
+            android:src="@mipmap/email" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Spinner
+
+            android:id="@+id/country_spinner"
+            style="@style/dropDown_style"
+            android:paddingLeft="20dp"
+            android:spinnerMode="dropdown"
+
+
+            >
+
+        </Spinner>
+
+
+        <ImageView
+            android:id="@+id/arrow2"
+
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignRight="@+id/country_spinner"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/horizontal_margin_short"
+            android:layout_marginRight="@dimen/horizontal_margin_short"
+            android:contentDescription="@string/password"
+            android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+        <ImageView
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:src="@mipmap/country"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@id/country_spinner"
+            android:layout_marginLeft="@dimen/horizontal_margin_short"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/userStatus_spinner"
+            style="@style/dropDown_style"
+            android:paddingLeft="20dp"
+            android:spinnerMode="dropdown">
+
+        </Spinner>
+
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignRight="@id/userStatus_spinner"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/horizontal_margin_short"
+            android:layout_marginRight="@dimen/horizontal_margin_short"
+            android:contentDescription="@string/password"
+            android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+
+        <ImageView
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:src="@mipmap/doctor"
+            android:layout_centerVertical="true"
+            android:layout_alignLeft="@id/userStatus_spinner"
+            android:layout_marginLeft="@dimen/horizontal_margin_short"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/password_editText_signUp"
+            style="@style/EditText_style"
+            android:drawablePadding="@dimen/horizontal_margin_short"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingLeft="@dimen/padding_editText" />
+
+
+        <ImageView
+
+            android:id="@+id/password_imageView"
+            android:layout_width="@dimen/icon_width"
+            android:layout_height="@dimen/icon_height"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/horizontal_margin_short"
+            android:contentDescription="@string/password"
+            android:src="@mipmap/password" />
+
+    </RelativeLayout>
+
+    <Button
+        style="@style/Button_style"
+        android:text="@string/creat_account" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/twitter_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/horizontal_margin_short"
+            android:layout_marginLeft="8dp"
+            android:contentDescription="twitter_icon"
+            android:src="@mipmap/twitter_icon" />
+
+        <ImageView
+            android:id="@+id/gmail_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@id/twitter_icon"
+            android:layout_alignTop="@id/twitter_icon"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/twitter_icon"
+            android:contentDescription="gmail_icon"
+            android:src="@mipmap/gmail_icon" />
+
+
+        <ImageView
+            android:id="@+id/facebook_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@id/twitter_icon"
+            android:layout_alignTop="@id/twitter_icon"
+            android:layout_marginLeft="8dp"
+            android:layout_toLeftOf="@id/twitter_icon"
+            android:contentDescription="facebook_icon"
+            android:src="@mipmap/facebook_icon" />
+    </LinearLayout>
+
+</LinearLayout>

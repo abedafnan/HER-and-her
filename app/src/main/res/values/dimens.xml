@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="vertical_margin_long">40dp</dimen>
+    <dimen name="padding_editText">60dp</dimen>
     <dimen name="horizontal_margin_long">40dp</dimen>
     <dimen name="fab_margin">16dp</dimen>
     <dimen name="activity_padding">40dp</dimen>
@@ -13,6 +14,12 @@
     <dimen name="vertical_margin">16dp</dimen>
     <dimen name="horizontal_margin_short">8dp</dimen>
     <dimen name="vertical_margin_short">8dp</dimen>
+
+
+    <dimen name="icon_width">40dp</dimen>
+    <dimen name="icon_height">40dp</dimen>
+
     <dimen name="nav_header_vertical_spacing">8dp</dimen>
     <dimen name="nav_header_height">176dp</dimen>
+
 </resources>

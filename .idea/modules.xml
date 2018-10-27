@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://C:\Users\Afnan A. A. Abed\AndroidStudioProjects\Herher\.idea\HER-and-her-Hackathon.iml" filepath="C:\Users\Afnan A. A. Abed\AndroidStudioProjects\Herher\.idea\HER-and-her-Hackathon.iml" />
       <module fileurl="file://$PROJECT_DIR$/Herher.iml" filepath="$PROJECT_DIR$/Herher.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
