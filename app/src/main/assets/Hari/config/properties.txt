@@ -1,8 +1,8 @@
-url:http://djustice-android.tumblr.com
-name:Hari
-email:hariutd@gmail.com
-gender:male
-botmaster:Hari Vignesh Jayapalan
-organization:Medkumo
+url:null
+name:Hope
+email:abedafnan99@gmail.com
+gender:female
+botmaster:Afnan A Abed
+organization:IUG
 version:0.0.1
 

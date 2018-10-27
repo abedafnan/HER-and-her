@@ -119,6 +119,13 @@ public class ChatbotActivity extends AppCompatActivity {
 
     }
 
+    // Code for the back arrow
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
     private void sendMessage(String message) {
         ChatMessage chatMessage = new ChatMessage(message, true, false);
         mAdapter.add(chatMessage);
