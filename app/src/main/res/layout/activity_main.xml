@@ -25,4 +25,11 @@
         android:text="login"
         android:onClick="move3"/>
 
+    <Button
+        android:id="@+id/bot_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bot"
+        />
+
 </LinearLayout>

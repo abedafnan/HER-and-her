@@ -4,24 +4,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="3dp">
+    android:padding="@dimen/horizontal_margin_short">
 
     <me.himanshusoni.chatmessageview.ChatMessageView
         android:id="@+id/chatMessageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:stateListAnimator="@null"
         app:cmv_arrowGravity="start"
+        app:cmv_arrowMargin="10dp"
         app:cmv_arrowPosition="left"
-        app:cmv_backgroundColor="#8800bcd4"
-        app:cmv_backgroundColorPressed="#ff00bcd4"
+        app:cmv_backgroundColor="#ffffff"
+        app:cmv_backgroundColorPressed="#FFBABABA"
+        app:cmv_contentPadding="10dp"
         app:cmv_cornerRadius="16dp"
-        app:cmv_showArrow="true">
+        app:cmv_showArrow="false">
 
         <TextView
             android:id="@+id/text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Helloworld"
+            android:text="reply placeholder"
             android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
     </me.himanshusoni.chatmessageview.ChatMessageView>
 

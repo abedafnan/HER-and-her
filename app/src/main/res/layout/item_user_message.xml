@@ -12,13 +12,13 @@
         android:elevation="2dp"
         android:stateListAnimator="@null"
         app:cmv_arrowGravity="start"
-        app:cmv_arrowMargin="3dp"
+        app:cmv_arrowMargin="10dp"
         app:cmv_arrowPosition="right"
         app:cmv_backgroundColor="@color/colorPrimary"
         app:cmv_backgroundColorPressed="#FFBABABA"
         app:cmv_contentPadding="10dp"
         app:cmv_cornerRadius="16dp"
-        app:cmv_showArrow="true">
+        app:cmv_showArrow="false">
 
         <TextView
             android:id="@+id/text"
